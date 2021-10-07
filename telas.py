@@ -3,6 +3,171 @@ from tkinter import *
 
 #------------TELA 4-------------
 
+class PoemaCrianca(Toplevel): #Tela escolha de conteudo
+    def __init__(self, original): #Inserindo inicialização
+        self.frame_original = original
+        Toplevel.__init__(self)
+        self.title('Poema Crianca')       # Inserindo nome da janela
+        self.geometry('300x647+540+15')    # Inserindo tamanho da janela
+        self.configure(bg="#7030A0")
+
+        text = Label(self, text='Poema Crianca', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
+        text.place(relx=0.14, rely = 0.05)
+
+        self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
+
+    def hide(self):  # Esconde a janela root
+        self.withdraw()
+
+    def voltar(self):
+        self.hide()
+        self.volta = Infantil(self)
+
+class PoemaBolha(Toplevel): #Tela escolha de conteudo
+    def __init__(self, original): #Inserindo inicialização
+        self.frame_original = original
+        Toplevel.__init__(self)
+        self.title('Poema Bolha')       # Inserindo nome da janela
+        self.geometry('300x647+540+15')    # Inserindo tamanho da janela
+        self.configure(bg="#7030A0")
+
+        text = Label(self, text='Poema Bolha de\nSabão', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
+        text.place(relx=0.12, rely = 0.05)
+
+        self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
+
+    def hide(self):  # Esconde a janela root
+        self.withdraw()
+
+    def voltar(self):
+        self.hide()
+        self.volta = Infantil(self)
+
+class PoemaAvos(Toplevel): #Tela escolha de conteudo
+    def __init__(self, original): #Inserindo inicialização
+        self.frame_original = original
+        Toplevel.__init__(self)
+        self.title('Poema Avós')       # Inserindo nome da janela
+        self.geometry('300x647+540+15')    # Inserindo tamanho da janela
+        self.configure(bg="#7030A0")
+
+        text = Label(self, text='Poema Avós', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
+        text.place(relx=0.22, rely = 0.05)
+
+        self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
+
+    def hide(self):  # Esconde a janela root
+        self.withdraw()
+
+    def voltar(self):
+        self.hide()
+        self.volta = Infantil(self)
+
+class PoemaPlanta(Toplevel): #Tela escolha de conteudo
+    def __init__(self, original): #Inserindo inicialização
+        self.frame_original = original
+        Toplevel.__init__(self)
+        self.title('Poema Planta')       # Inserindo nome da janela
+        self.geometry('300x647+540+15')    # Inserindo tamanho da janela
+        self.configure(bg="#7030A0")
+
+        text = Label(self, text='Poema Planta', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
+        text.place(relx=0.2, rely = 0.05)
+
+
+        text = Label(self, text='Sou a raiz que do mundo não vejo\nnada.\nPois estou enterrada.\nMeu caule é o tronco e o sustento,\nDos galhos para o crescimento.\nÉ na folha da planta que\nfunciona o pulmão.\nAjudar a respirar é minha função.\nA flor perfuma e enfeita a vegetação\nPara as crianças que nascerão.\nNo fruto as sementes estão\nno interior\nNovas plantinhas vêm do\nmeu amor.',
+        
+        bg='#7030A0', fg='#ffffff', font=('Poppins', 12, 'bold'))
+        text.place(relx=0.01, rely = 0.2)
+
+        self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
+
+    def hide(self):  # Esconde a janela root
+        self.withdraw()
+
+    def voltar(self):
+        self.hide()
+        self.volta = Cultural(self)
+
+class PoemaTransporte(Toplevel): #Tela escolha de conteudo
+    def __init__(self, original): #Inserindo inicialização
+        self.frame_original = original
+        Toplevel.__init__(self)
+        self.title('Poema Transporte')       # Inserindo nome da janela
+        self.geometry('300x647+540+15')    # Inserindo tamanho da janela
+        self.configure(bg="#7030A0")
+
+        text = Label(self, text='Poema Transporte', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
+        text.place(relx=0.07, rely = 0.05)
+
+
+        textT = Label(self, text='O homem inventou a roda\nE logo surgiu a carroça.\nO carro precisa de motorista,\nMas a bike só um ciclista.\nA maria-fumaça\nFicou na lembrança.\nPosso ir de navio\nAté a França.\nSantos Dumont inventou o avião\nViagens surgiram de montão.\nPara chegar na lua,\nNão dá para ser de balão,\nSomente de foguete\nRealizo essa expedição.',
+        
+        bg='#7030A0', fg='#ffffff', font=('Poppins', 12, 'bold'))
+        textT.place(relx=0.05, rely = 0.2)
+
+
+
+
+        self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
+
+    def hide(self):  # Esconde a janela root
+        self.withdraw()
+
+    def voltar(self):
+        self.hide()
+        self.volta = Cultural(self)
+
+class PoemaEletricidade(Toplevel): #Tela escolha de conteudo
+    def __init__(self, original): #Inserindo inicialização
+        self.frame_original = original
+        Toplevel.__init__(self)
+        self.title('Poema Eletricidade')       # Inserindo nome da janela
+        self.geometry('300x647+540+15')    # Inserindo tamanho da janela
+        self.configure(bg="#7030A0")
+
+        text = Label(self, text='Poema Eletricidade', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
+        text.place(relx=0.04, rely = 0.05)
+
+        text = Label(self, text='Se você usa geladeira\nNão marque bobeira\nUse com inteligência\nPara ela não faltar!\nNossa energia vem d’água\nÉ melhor economizar.\nEsse recurso precioso\nUm dia pode acabar.',
+        
+        bg='#7030A0', fg='#ffffff', font=('Poppins', 12, 'bold'))
+        text.place(relx=0.15, rely = 0.3)
+
+        self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
+
+    def hide(self):  # Esconde a janela root
+        self.withdraw()
+
+    def voltar(self):
+        self.hide()
+        self.volta = Cultural(self)
+
+class PoemaAgua(Toplevel): #Tela escolha de conteudo
+    def __init__(self, original): #Inserindo inicialização
+        self.frame_original = original
+        Toplevel.__init__(self)
+        self.title('Poema Agua')       # Inserindo nome da janela
+        self.geometry('300x647+540+15')    # Inserindo tamanho da janela
+        self.configure(bg="#7030A0")
+
+        text = Label(self, text='Poema Agua', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
+        text.place(relx=0.22, rely = 0.05)
+
+        text = Label(self, text='Ela é uma beleza,\nFonte de grande riqueza,\nEstá em toda parte na natureza,\nTome cuidado na correnteza!\nSabe de quem estou falando?\nÉ a água escoando...',
+        
+        bg='#7030A0', fg='#ffffff', font=('Poppins', 12, 'bold'))
+        text.place(relx=0.05, rely = 0.3)
+
+        self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
+
+    def hide(self):  # Esconde a janela root
+        self.withdraw()
+
+    def voltar(self):
+        self.hide()
+        self.volta = Cultural(self)
+
 class GenerosP(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -76,7 +241,30 @@ class Infantil(Toplevel): #Tela escolha de conteudo
         text = Label(self, text='Infantil', bg='#7030A0', fg='#ffffff', font=('Poppins', 20, 'bold'))
         text.place(relx=0.35, rely = 0.03)
 
+        self.poemaInfantil1 = Button(self, bg = '#ED7D31', fg = '#fff', text='Poema da Criança', font = 'Poppins-Regular.ttf', command=self.pCrianca).place(relx=0.17,rely=0.25,relwidth=0.7, relheight = 0.1)
+
+        self.poemaInfantil2 = Button(self, bg = '#ED7D31', fg = '#fff', font = 'Poppins-Regular.ttf').place(relx=0.17,rely=0.37,relwidth=0.7, relheight = 0.1)
+
+        self.poemaInfantil3 = Button(self, bg = '#ED7D31', fg = '#fff', text='Poema da bolha de sabão', font = 'Poppins-Regular.ttf', command=self.pBolha).place(relx=0.17,rely=0.49,relwidth=0.7, relheight = 0.1)
+
+        self.poemaInfantil4 = Button(self, bg = '#ED7D31', fg = '#fff', text='Poema dos Avós', font = 'Poppins-Regular.ttf', command=self.pAvos).place(relx=0.17,rely=0.61,relwidth=0.7, relheight = 0.1)
+
+
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.85,relwidth=0.7, relheight = 0.1)
+
+    def pCrianca(self):
+        self.hide()
+        self.avanca = PoemaCrianca(self)
+
+    def pBolha(self):
+        self.hide()
+        self.avanca = PoemaBolha(self)
+
+    def pAvos(self):
+        self.hide()
+        self.avanca = PoemaAvos(self)
+
+
 
     def voltar(self):
         self.hide()
@@ -84,7 +272,6 @@ class Infantil(Toplevel): #Tela escolha de conteudo
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
 
 class Cultural(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
@@ -97,7 +284,34 @@ class Cultural(Toplevel): #Tela escolha de conteudo
         text = Label(self, text='Cultural', bg='#7030A0', fg='#ffffff', font=('Poppins', 20, 'bold'))
         text.place(relx=0.3, rely = 0.03)
 
+
+        self.poemaCultural1 = Button(self, bg = '#ED7D31', fg = '#fff', text='Poema da Planta', font = 'Poppins-Regular.ttf', command=self.pPlanta).place(relx=0.17,rely=0.25,relwidth=0.7, relheight = 0.1)
+
+        self.poemaCultural2 = Button(self, bg = '#ED7D31', fg = '#fff', text='Poema dos meios \nde transporte', font = 'Poppins-Regular.ttf', command=self.pTransporte).place(relx=0.17,rely=0.37,relwidth=0.7, relheight = 0.1)
+
+        self.poemaCultural3 = Button(self, bg = '#ED7D31', fg = '#fff', text='Poema da eletricidade', font = 'Poppins-Regular.ttf', command=self.pEletricidade).place(relx=0.17,rely=0.49,relwidth=0.7, relheight = 0.1)
+
+        self.poemaCultural4 = Button(self, bg = '#ED7D31', fg = '#fff', text='Poema Água', font = 'Poppins-Regular.ttf', command=self.pAgua).place(relx=0.17,rely=0.61,relwidth=0.7, relheight = 0.1)
+
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.85,relwidth=0.7, relheight = 0.1)
+
+
+    def pPlanta(self):
+        self.hide()
+        self.avanca = PoemaPlanta(self)
+
+    def pTransporte(self):
+        self.hide()
+        self.avanca = PoemaTransporte(self)
+
+    def pEletricidade(self):
+        self.hide()
+        self.avanca = PoemaEletricidade(self)
+
+    def pAgua(self):
+        self.hide()
+        self.avanca = PoemaAgua(self)
+
 
     def voltar(self):
         self.hide()
@@ -105,7 +319,6 @@ class Cultural(Toplevel): #Tela escolha de conteudo
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
 
 
 

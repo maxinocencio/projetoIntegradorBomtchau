@@ -734,7 +734,7 @@ class Subtracao(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
         Toplevel.__init__(self)
-        self.title('Adição')       # Inserindo nome da janela
+        self.title('Subtração')       # Inserindo nome da janela
         self.geometry('300x647+540+15')    # Inserindo tamanho da janela
         self.configure(bg="#7030A0")
 

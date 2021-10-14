@@ -1,9 +1,6 @@
-#Telas
-
 from tkinter import *
 
-#------------TELA 4-------------
-
+#------------TELA Escolha de Conteúdo
 class PoemaBolha(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -15,17 +12,13 @@ class PoemaBolha(Toplevel): #Tela escolha de conteudo
         text = Label(self, text='Poema Bolha de\nSabão', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
         text.place(relx=0.12, rely = 0.05)
 
-
-
         text = Label(self, text='A bolinha de sabão\nVai voando lá no céu.\nO menino estica a mão\nMas estoura é no chapéu.\nEla é toda redondinha\nBrilha como diamante\nDiferente da andorinha\nQue some no horizonte.\nSe você já brincou\nTem boa lembrança\nNão deixem que digam que é coisa\nde criança.',
         
         bg='#7030A0', fg='#ffffff', font=('Poppins', 12, 'bold'))
         text.place(relx = 0.01,rely = 0.27)
 
-
         text = Label(self, text = '– Natália Crispim', bg='#7030A0', fg='#fff', font=('Poppins', 10, 'bold'))
         text.place(relx = 0.55, rely = 0.8)
-
 
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
 
@@ -35,7 +28,7 @@ class PoemaBolha(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.volta = Infantil(self)
-
+#------------TELA Escolha de Conteúdo
 class PoemaSonhos(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -47,7 +40,6 @@ class PoemaSonhos(Toplevel): #Tela escolha de conteudo
         text = Label(self, text='Sonhos Agonizantes', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
         text.place(relx=0.02, rely = 0.05)
 
-
         text = Label(self, text='Há dias que para mim,\nA vida é sem sentido,\nEntão me sinto assim:\nUm cão de rua perdido!\nUm animal sem dono,\nMinha alma então vagueia,\nVazia no abandono,\nSem paz, sem rumo, alheia!\nÀs vezes penso até\nQue o céu me esqueceu,\nQue já perdi a fé…\nMas sei que os sonhos meus,\nEmbora agonizantes,\nNão vão morrer sem Deus!',
         
         bg='#7030A0', fg='#ffffff', font=('Poppins', 12, 'bold'))
@@ -55,7 +47,6 @@ class PoemaSonhos(Toplevel): #Tela escolha de conteudo
         
         text = Label(self, text = '– Elizeu Petrelli de Vitor ', bg='#7030A0', fg='#fff', font=('Poppins', 10, 'bold'))
         text.place(relx = 0.45, rely = 0.8)
-
 
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
 
@@ -65,7 +56,7 @@ class PoemaSonhos(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.volta = Drama(self)
-
+#------------TELA Escolha de Conteúdo
 class PoemaPlanta(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -77,16 +68,13 @@ class PoemaPlanta(Toplevel): #Tela escolha de conteudo
         text = Label(self, text='Poema Planta', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
         text.place(relx=0.2, rely = 0.05)
 
-
         text = Label(self, text='Sou a raiz que do mundo não vejo\nnada.\nPois estou enterrada.\nMeu caule é o tronco e o sustento,\nDos galhos para o crescimento.\nÉ na folha da planta que\nfunciona o pulmão.\nAjudar a respirar é minha função.\nA flor perfuma e enfeita a vegetação\nPara as crianças que nascerão.\nNo fruto as sementes estão\nno interior\nNovas plantinhas vêm do\nmeu amor.',
         
         bg='#7030A0', fg='#ffffff', font=('Poppins', 12, 'bold'))
         text.place(relx=0.01, rely = 0.2)
 
-
         text = Label(self, text = '– Natália Crispim', bg='#7030A0', fg='#fff', font=('Poppins', 10, 'bold'))
         text.place(relx = 0.55, rely = 0.8)
-
 
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
 
@@ -96,7 +84,7 @@ class PoemaPlanta(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.volta = Cultural(self)
-
+#------------TELA Escolha de Conteúdo
 class PoemaTransporte(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -108,7 +96,6 @@ class PoemaTransporte(Toplevel): #Tela escolha de conteudo
         text = Label(self, text='Poema Transporte', bg='#A8E86E', fg='#ffffff', font=('Poppins', 20, 'bold'))
         text.place(relx=0.07, rely = 0.05)
 
-
         textT = Label(self, text='O homem inventou a roda\nE logo surgiu a carroça.\nO carro precisa de motorista,\nMas a bike só um ciclista.\nA maria-fumaça\nFicou na lembrança.\nPosso ir de navio\nAté a França.\nSantos Dumont inventou o avião\nViagens surgiram de montão.\nPara chegar na lua,\nNão dá para ser de balão,\nSomente de foguete\nRealizo essa expedição.',
         
         bg='#7030A0', fg='#ffffff', font=('Poppins', 12, 'bold'))
@@ -116,7 +103,6 @@ class PoemaTransporte(Toplevel): #Tela escolha de conteudo
 
         text = Label(self, text = '– Natália Crispim', bg='#7030A0', fg='#fff', font=('Poppins', 10, 'bold'))
         text.place(relx = 0.55, rely = 0.8)
-
 
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
 
@@ -126,7 +112,7 @@ class PoemaTransporte(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.volta = Cultural(self)
-
+#------------TELA Escolha de Conteúdo
 class PoemaEletricidade(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -146,7 +132,6 @@ class PoemaEletricidade(Toplevel): #Tela escolha de conteudo
         text = Label(self, text = '– Natália Crispim', bg='#7030A0', fg='#fff', font=('Poppins', 10, 'bold'))
         text.place(relx = 0.55, rely = 0.8)
 
-
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
 
     def hide(self):  # Esconde a janela root
@@ -155,7 +140,7 @@ class PoemaEletricidade(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.volta = Cultural(self)
-
+#------------TELA Escolha de Conteúdo
 class PoemaAgua(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -175,7 +160,6 @@ class PoemaAgua(Toplevel): #Tela escolha de conteudo
         text = Label(self, text = '– Natália Crispim', bg='#7030A0', fg='#fff', font=('Poppins', 10, 'bold'))
         text.place(relx = 0.55, rely = 0.8)
 
-
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
 
     def hide(self):  # Esconde a janela root
@@ -184,7 +168,7 @@ class PoemaAgua(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.volta = Cultural(self)
-
+#------------TELA Escolha de Conteúdo
 class GenerosP(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -226,7 +210,7 @@ class GenerosP(Toplevel): #Tela escolha de conteudo
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
+#------------TELA Escolha de Conteúdo
 class Drama(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -252,7 +236,7 @@ class Drama(Toplevel): #Tela escolha de conteudo
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
+#------------TELA Escolha de Conteúdo
 class Infantil(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -270,7 +254,6 @@ class Infantil(Toplevel): #Tela escolha de conteudo
 
         #self.poemaInfantil4 = Button(self, bg = '#ED7D31', fg = '#fff', activebackground='#ED7D31', activeforeground = '#fff', text='Poema dos Avós', font = 'Poppins-Regular.ttf', command=self.pAvos).place(relx=0.17,rely=0.49,relwidth=0.7, relheight = 0.1)
 
-
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.85,relwidth=0.7, relheight = 0.1)
 
     '''def pCrianca(self):
@@ -285,15 +268,13 @@ class Infantil(Toplevel): #Tela escolha de conteudo
         self.hide()
         self.avanca = PoemaAvos(self)'''
 
-
-
     def voltar(self):
         self.hide()
         self.volta = GenerosP(self)
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
+#------------TELA Escolha de Conteúdo
 class Cultural(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -305,7 +286,6 @@ class Cultural(Toplevel): #Tela escolha de conteudo
         text = Label(self, text='Cultural', bg='#7030A0', fg='#ffffff', font=('Poppins', 20, 'bold'))
         text.place(relx=0.3, rely = 0.03)
 
-
         self.poemaCultural1 = Button(self, bg = '#ED7D31', fg = '#fff', activebackground='#ED7D31', activeforeground = '#fff', text='Poema da Planta', font = 'Poppins-Regular.ttf', command=self.pPlanta).place(relx=0.17,rely=0.25,relwidth=0.7, relheight = 0.1)
 
         self.poemaCultural2 = Button(self, bg = '#ED7D31', fg = '#fff', activebackground='#ED7D31', activeforeground = '#fff', text='Poema dos meios \nde transporte', font = 'Poppins-Regular.ttf', command=self.pTransporte).place(relx=0.17,rely=0.37,relwidth=0.7, relheight = 0.1)
@@ -315,7 +295,6 @@ class Cultural(Toplevel): #Tela escolha de conteudo
         self.poemaCultural4 = Button(self, bg = '#ED7D31', fg = '#fff', activebackground='#ED7D31', activeforeground = '#fff', text='Poema Água', font = 'Poppins-Regular.ttf', command=self.pAgua).place(relx=0.17,rely=0.61,relwidth=0.7, relheight = 0.1)
 
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.85,relwidth=0.7, relheight = 0.1)
-
 
     def pPlanta(self):
         self.hide()
@@ -333,14 +312,13 @@ class Cultural(Toplevel): #Tela escolha de conteudo
         self.hide()
         self.avanca = PoemaAgua(self)
 
-
     def voltar(self):
         self.hide()
         self.volta = GenerosP(self)
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
+#------------TELA Escolha de Conteúdo
 class Escolha(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -355,7 +333,6 @@ class Escolha(Toplevel): #Tela escolha de conteudo
         self.imghistoria = PhotoImage(file='historia.png')
         self.imgpoema = PhotoImage(file='poema.png')
 
-
         self.botaoH = Button(self, image = self.imghistoria,command=self.historia, borderwidth=0, bg='#7030A0', activebackground = '#7030A0').place(relx=0.02, rely=0.38, width=140, height=195)
 
         self.botaoP = Button(self, image = self.imgpoema,command=self.poema, borderwidth=0, bg='#7030A0', activebackground = '#7030A0').place(relx=0.52, rely=0.38, width=140, height=195)
@@ -366,7 +343,6 @@ class Escolha(Toplevel): #Tela escolha de conteudo
         self.hide()
         self.volta = Tela7(self)
         
-
     def historia(self):
         self.hide()
         self.proxtela = GenerosH(self)
@@ -377,7 +353,10 @@ class Escolha(Toplevel): #Tela escolha de conteudo
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
+    def show(self):  # Comando para mostrar essa tela novamente SE ela estiver no HIDE
+        self.update()
+        self.deiconify()
+#------------TELA Aventura
 class Aventura(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -393,7 +372,6 @@ class Aventura(Toplevel): #Tela escolha de conteudo
 
         self.hAventura = Button(self, bg = '#ED7D31', fg = '#fff', activebackground='#ED7D31', activeforeground = '#fff', text='O medo', font = 'Poppins-Regular.ttf', command=self.medo).place(relx=0.17,rely=0.37,relwidth=0.7, relheight = 0.1)
 
-
     def medo(self):
         self.hide()
         self.avanca = AventuraCasa(self)
@@ -404,7 +382,7 @@ class Aventura(Toplevel): #Tela escolha de conteudo
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
+#------------TELA Aventura Casa
 class AventuraCasa(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -416,7 +394,6 @@ class AventuraCasa(Toplevel): #Tela escolha de conteudo
         text = Label(self, text='O medo', bg='#ED7D31', fg='#ffffff', font=('Poppins', 20, 'bold'))
         text.place(relx=0.35, rely = 0.05)
 
-
         text = Label(self, text=f'Bob era um menino sonhador. Sonhava\nviajar de avião. Mas também tinha medo\nde altura. No natal do ano 2014, Bob\nrecebeu um convite de um amigo para\npassar o natal em sua casa. o seu amigo\nmorava no Ceará. Bob ficou muito feliz\ncom o convite e decidiu enfrentar seus\nmedos.Então comprou sua passagem,\nfoi se preparando até o dia da viajem.\nChegou o grande dia, ele estava com\nmuito medo, mas não podia desistir.\nJá no aeroporto, ouviram a chamada:\n—Voo 588 o avião está abordo. Bob olha \npara o avião, seu coração bate forte,\nlogo após entra nele e deixa o medo para\ntrás. Chega ao seu destino, reencontra seu\namigo e teve uns dos seus melhores natais.\nApós essa viajem Bob nunca mais\nteve medo de altura.',
         
         bg='#7030A0', fg='#ffffff', font=('Poppins', 10, 'bold'), justify=CENTER)
@@ -424,7 +401,6 @@ class AventuraCasa(Toplevel): #Tela escolha de conteudo
         
         '''text = Label(self, text = '– Elizeu Petrelli de Vitor ', bg='#7030A0', fg='#fff', font=('Poppins', 10, 'bold'))
         text.place(relx = 0.45, rely = 0.8)'''
-
 
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.88,relwidth=0.7, relheight = 0.1)
 
@@ -434,7 +410,7 @@ class AventuraCasa(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.volta = Aventura(self)
-
+#------------TELA Fantasia
 class Fantasia(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -450,7 +426,6 @@ class Fantasia(Toplevel): #Tela escolha de conteudo
 
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.85,relwidth=0.7, relheight = 0.1)
 
-
     def avancar(self):
         self.hide()
         self.avanca = FantasiaChapeuzinho(self)
@@ -461,7 +436,7 @@ class Fantasia(Toplevel): #Tela escolha de conteudo
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
+#------------TELA Fantasia Chapéuzinho Vermelho
 class FantasiaChapeuzinho(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -486,7 +461,7 @@ class FantasiaChapeuzinho(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.volta = Fantasia(self)
-
+#------------TELA Fábula do Rato
 class FabulaRato(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -516,7 +491,7 @@ class FabulaRato(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.volta = Fabula(self)
-
+#------------TELA Fábula
 class Fabula(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -529,7 +504,6 @@ class Fabula(Toplevel): #Tela escolha de conteudo
         text.place(relx=0.3, rely = 0.03)
 
         self.hFabula = Button(self, bg = '#ED7D31', fg = '#fff', activebackground='#ED7D31', activeforeground = '#fff', text='O Leão e o Rato', font = 'Poppins-Regular.ttf', command=self.avancar).place(relx=0.17,rely=0.37,relwidth=0.7, relheight = 0.1)
-
 
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf', command=self.voltar).place(relx=0.17,rely=0.85,relwidth=0.7, relheight = 0.1)
 
@@ -544,7 +518,7 @@ class Fabula(Toplevel): #Tela escolha de conteudo
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
+#------------TELA GenerosH
 class GenerosH(Toplevel): #Pagina do cadastro
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -589,10 +563,11 @@ class GenerosH(Toplevel): #Pagina do cadastro
         self.abrir = Escolha(self)
     def hide(self):  # Esconde a janela root
         self.withdraw()
-
+#------------TELA 7 
 class Tela7(Toplevel): #Pagina do cadastro
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
+        self.telalogin = 
         Toplevel.__init__(self)
         self.title('Escolha o conteúdo')       # Inserindo nome da janela
         self.geometry('300x647+540+15')    # Inserindo tamanho da janela
@@ -616,27 +591,25 @@ class Tela7(Toplevel): #Pagina do cadastro
 
     def abrirBotao5(self):
         self.hide()
-        self.abrir = Escolha(self)
+        self.abrir = Escolha(self.telalogin)
 
     def abrirBotao6(self):
         self.hide()
-        self.abrir = FormasGeometricas(self)
+        self.abrir = FormasGeometricas(self.telalogin)
 
     def abrirBotao7(self):
         self.hide()
-        self.abrir = ProblemasMatematicos(self)
+        self.abrir = ProblemasMatematicos(self.telalogin)
 
     def voltar(self): # Comando para ir a próxima tela
-        self.destroy()
-        self.janela = Tela1()
-
+        self.hide()
+        self.telalogin.show()
+    def hide(self):  # Esconde a janela root
+        self.withdraw()
     def show(self):  # Comando para mostrar essa tela novamente SE ela estiver no HIDE
         self.update()
         self.deiconify()
-
-    def hide(self):  # Esconde a janela root
-        self.withdraw()
-
+#------------TELA Escolha de Conteúdo
 class ProblemasMatematicos(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -653,8 +626,6 @@ class ProblemasMatematicos(Toplevel): #Tela escolha de conteudo
         self.multiplicacao = PhotoImage(file='multiplicacao.png')
         self.divisao = PhotoImage(file='divisao.png')
 
-
-
         self.BtnAdicao = Button(self, image = self.adicao, command = self.Tadicao, borderwidth=0, bg='#7030A0', activebackground = '#7030A0').place(relx=0.02, rely=0.18, relwidth=0.46, relheight=0.3)
 
         self.BtnSubtracao = Button(self, image = self.subtracao, command = self.Tsubtracao, borderwidth=0, bg='#7030A0', activebackground = '#7030A0').place(relx=0.52, rely=0.18, relwidth=0.46, relheight=0.3)
@@ -663,19 +634,17 @@ class ProblemasMatematicos(Toplevel): #Tela escolha de conteudo
 
         self.BtnDivisao = Button(self, image = self.divisao, command = self.Tdivisao, borderwidth=0, bg='#7030A0', activebackground = '#7030A0').place(relx=0.52, rely=0.5, relwidth=0.46, relheight=0.3)
 
-
-
-
-
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf',command=self.voltar).place(relx=0.17,rely=0.85,relwidth=0.7, relheight = 0.1)
 
     def hide(self):  # Esconde a janela root
         self.withdraw()
+    def show(self):  # Comando para mostrar essa tela novamente SE ela estiver no HIDE
+        self.update()
+        self.deiconify()
 
     def Tadicao(self):
         self.hide()
         self.avanca = Adicao(self)
-
 
     def Tsubtracao(self):
         self.hide()
@@ -691,9 +660,9 @@ class ProblemasMatematicos(Toplevel): #Tela escolha de conteudo
 
     def voltar(self):
         self.hide()
-        self.voltar = Tela7(self)
-
-class Adicao(Toplevel): #Tela escolha de conteudo
+        self.voltar = Tela7(self.frame_original)
+#------------TELA Escolha de Conteúdo
+class Adicao(Toplevel): 
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
         Toplevel.__init__(self)
@@ -729,8 +698,8 @@ class Adicao(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.voltar = ProblemasMatematicos(self)
-
-class Subtracao(Toplevel): #Tela escolha de conteudo
+#------------TELA Escolha de Conteúdo
+class Subtracao(Toplevel): 
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
         Toplevel.__init__(self)
@@ -766,8 +735,8 @@ class Subtracao(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.voltar = ProblemasMatematicos(self)
-
-class Multiplicacao(Toplevel): #Tela escolha de conteudo
+#------------TELA Escolha de Conteúdo
+class Multiplicacao(Toplevel):
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
         Toplevel.__init__(self)
@@ -803,7 +772,7 @@ class Multiplicacao(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.voltar = ProblemasMatematicos(self)
-
+#------------TELA Escolha de Conteúdo
 class Divisao(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -840,7 +809,7 @@ class Divisao(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.voltar = ProblemasMatematicos(self)
-
+#------------TELA Escolha de Conteúdo
 class Correto(Toplevel): #Tela escolha de conteudo
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -861,8 +830,8 @@ class Correto(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.voltar = ProblemasMatematicos(self)
-
-class Errado(Toplevel): #Tela escolha de conteudo
+#------------TELA Escolha de Conteudo
+class Errado(Toplevel): 
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
         Toplevel.__init__(self)
@@ -873,7 +842,6 @@ class Errado(Toplevel): #Tela escolha de conteudo
         text = Label(self, text='Você Errou!', bg='#FF4747', fg='#ffffff', font=('Poppins', 17, 'bold'))
         text.place(relx=0.27, rely = 0.3)
 
-
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf',command=self.voltar).place(relx=0.17,rely=0.85,relwidth=0.7, relheight = 0.1)
 
     def hide(self):  # Esconde a janela root
@@ -882,8 +850,8 @@ class Errado(Toplevel): #Tela escolha de conteudo
     def voltar(self):
         self.hide()
         self.voltar = ProblemasMatematicos(self)
-
-class FormasGeometricas(Toplevel): #Tela escolha de conteudo
+#------------TELA Escolha de Conteudo
+class FormasGeometricas(Toplevel): 
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
         Toplevel.__init__(self)
@@ -910,17 +878,18 @@ class FormasGeometricas(Toplevel): #Tela escolha de conteudo
 
         self.botao = Button(self, text='Voltar', font = 'Poppins-Regular.ttf',command=self.voltar).place(relx=0.17,rely=0.85,relwidth=0.7, relheight = 0.1)
 
-    def hide(self):  # Esconde a janela root
-        self.withdraw()
-
-    def avancar(self):
-        pass
-
     def voltar(self):
         self.hide()
         self.voltar = Tela7(self)
+    def hide(self):  # Esconde a janela root
+        self.withdraw()
+    def show(self):  # Comando para mostrar essa tela novamente SE ela estiver no HIDE
+        self.update()
+        self.deiconify()
 
-#------------TELA 3----------------
+    def avancar(self):
+        pass
+#------------TELA 3---------------
 class Tela3(Toplevel): #Pagina do cadastro
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -959,7 +928,7 @@ class Tela3(Toplevel): #Pagina do cadastro
     def show(self):  # Comando para destruir tela
         self.update()
         self.deiconify()
-#------------TELA 2-----------
+#------------TELA 2---------------
 class Tela2(Toplevel): #Pagina do cadastro
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -1002,7 +971,7 @@ class Tela2(Toplevel): #Pagina do cadastro
     def show(self):  # Comando para destruir tela
         self.update()
         self.deiconify()
-#------------------TELA 1---------------
+#------------TELA 1---------------
 class Tela1:
     def __init__ (self): #Inserindo funções
         self.root = root
@@ -1042,8 +1011,7 @@ class Tela1:
     def show(self):  # Comando para destruir tela
         self.root.update()
         self.root.deiconify()
-
-
+#------------TELA 5---------------
 class Tela5(Toplevel): #Pagina do cadastro
     def __init__(self, original): #Inserindo inicialização
         self.frame_original = original
@@ -1078,5 +1046,6 @@ class Tela5(Toplevel): #Pagina do cadastro
     def hide(self):  # Esconde a janela root
         self.withdraw()
 
+# Programa Principal
 root = Tk()
 Tela1()
